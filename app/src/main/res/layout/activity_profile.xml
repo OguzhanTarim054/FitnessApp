@@ -22,7 +22,7 @@
         android:layout_width="411dp"
         android:layout_height="51dp"
         android:fontFamily="@font/russo_one"
-        android:text="Profil"
+        android:text="Endeks"
         android:textAlignment="center"
         android:textColor="@color/fontrengi"
         android:textSize="34sp"
