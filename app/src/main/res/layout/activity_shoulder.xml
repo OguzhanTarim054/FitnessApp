@@ -6,4 +6,159 @@
     android:layout_height="match_parent"
     tools:context=".ShoulderActivity">
 
+    <Button
+        android:id="@+id/dumbbellfrontriseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00CF7F7F"
+        android:insetLeft="4dp"
+        android:insetTop="4dp"
+        android:insetRight="4dp"
+        android:insetBottom="4dp"
+        android:textAlignment="center"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34sp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toTopOf="@+id/dumbbleescaptionbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoulderpressbuton" />
+
+    <Button
+        android:id="@+id/shoulderpressbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34dp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toTopOf="@+id/dumbbellfrontriseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/omuztoolbar3" />
+
+    <TextView
+        android:id="@+id/textViewomz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Shoulder Press"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewomz2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/omuztoolbar3" />
+
+    <TextView
+        android:id="@+id/textViewomz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Dumbbell Front Raise"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewsdk3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewomz1" />
+
+    <TextView
+        android:id="@+id/textViewsdk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Dumbbell Scaption"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewsdk4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewomz2" />
+
+    <TextView
+        android:id="@+id/textViewsdk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Lateral Raise Machine"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewsdk3" />
+
+    <Button
+        android:id="@+id/dumbbleescaptionbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34dp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toTopOf="@+id/lateralraisebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dumbbellfrontriseButton" />
+
+    <Button
+        android:id="@+id/lateralraisebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34dp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dumbbleescaptionbutton" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/omuztoolbar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/omuztitle"
+        android:layout_width="411dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/russo_one"
+        android:text="OMUZ"
+        android:textAlignment="center"
+        android:textColor="@color/fontrengi"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/omuztoolbar3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <Button
+        android:id="@+id/omuzgeributon"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="78dp"
+        android:layout_height="44dp"
+        android:text="Geri"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/omuztitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
 </androidx.constraintlayout.widget.ConstraintLayout>

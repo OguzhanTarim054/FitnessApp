@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +16,72 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessApp"
         tools:targetApi="31">
+        <activity
+            android:name=".LateralRaiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FronRaiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DumbbellScaptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DumbbellFrontRaiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DumbelFrontRiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DumbellFrontRaise"
+            android:exported="false" />
+        <activity
+            android:name=".shoulderPress"
+            android:exported="false" />
+        <activity
+            android:name=".VBarLatPulldownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CablePulloverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeatedCableRowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LatpulldownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".kabloCekme"
+            android:exported="false" />
+        <activity
+            android:name=".oturarakKaldiris"
+            android:exported="false" />
+        <activity
+            android:name=".tekdambil"
+            android:exported="false" />
+        <activity
+            android:name=".z_barcurl"
+            android:exported="false" />
+        <activity
+            android:name=".tekTarafGogus"
+            android:exported="false" />
+        <activity
+            android:name=".Butterfly"
+            android:exported="false" />
+        <activity
+            android:name=".ChestPress"
+            android:exported="false" />
+        <activity
+            android:name=".Gecis4"
+            android:exported="false" />
+        <activity
+            android:name=".Gecis3"
+            android:exported="false" />
+        <activity
+            android:name=".Gecis2"
+            android:exported="false" />
+        <activity
+            android:name=".Gecis"
+            android:exported="false" />
         <activity
             android:name=".DumbellKaldirma"
             android:exported="false" />

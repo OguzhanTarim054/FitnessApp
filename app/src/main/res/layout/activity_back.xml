@@ -6,4 +6,168 @@
     android:layout_height="match_parent"
     tools:context=".BackActivity">
 
+    <TextView
+        android:id="@+id/textViews1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Lat Pulldown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViews2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textViews3"
+        android:layout_width="174dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Cable Pullover"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViews4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViews2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textViews2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Seated Cable Row"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViews3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViews1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/latpulldownButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00CF7F7F"
+        android:insetLeft="4dp"
+        android:insetTop="4dp"
+        android:insetRight="4dp"
+        android:insetBottom="4dp"
+        android:textAlignment="center"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34sp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toTopOf="@+id/seatedcablerowButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/seatedcablerowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34dp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toTopOf="@+id/cablepulloverButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latpulldownButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/vbarlatpulldownButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34dp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cablepulloverButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bisepstoolbar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sirttitle"
+        android:layout_width="411dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/russo_one"
+        android:text="SIRT"
+        android:textAlignment="center"
+        android:textColor="@color/fontrengi"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bisepstoolbar3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <Button
+        android:id="@+id/sirtgeributon"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="78dp"
+        android:layout_height="44dp"
+        android:text="Geri"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sirttitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <Button
+        android:id="@+id/cablepulloverButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34dp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toTopOf="@+id/vbarlatpulldownButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seatedcablerowButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textViews4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/russo_one"
+        android:text="V Bar Lat Pulldown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViews3"
+        app:layout_constraintVertical_bias="0.5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

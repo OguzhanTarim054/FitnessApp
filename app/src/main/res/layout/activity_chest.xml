@@ -6,95 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ChestActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="411dp"
-        android:layout_height="44dp"
-        android:fontFamily="@font/russo_one"
-        android:text="Göğüs"
-        android:textAlignment="center"
-        android:textColor="@color/fontrengi"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/russo_one"
-        android:text="Dambıl Kaldırma"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/russo_one"
-        android:text="Şınav"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.623"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="174dp"
-        android:layout_height="75dp"
-        android:fontFamily="@font/russo_one"
-        android:text="Yatarak Dambıl Açılış"
-        android:textAlignment="textStart"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/russo_one"
-        android:text="Paralelde Göğüs"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835" />
-
     <Button
-        android:id="@+id/dkbuton"
+        android:id="@+id/gbbuton31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:width="10sp"
         android:height="10sp"
         android:backgroundTint="#00CF7F7F"
@@ -106,17 +22,122 @@
         app:icon="@android:drawable/ic_media_play"
         app:iconSize="34sp"
         app:iconTint="@color/iconrengi"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/kelebekbuton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189" />
+        app:layout_constraintTop_toBottomOf="@+id/gbbuton2" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/gbbuton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34dp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toTopOf="@+id/gbbuton31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bisepstoolbar3" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bisepstoolbar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bisepstitle"
+        android:layout_width="411dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Göğüs"
+        android:textAlignment="center"
+        android:textColor="@color/fontrengi"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bisepstoolbar3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/textViewsdk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Dambıl Kaldırma"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewsdk2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bisepstoolbar3" />
+
+    <TextView
+        android:id="@+id/textViewsdk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Chest Press"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewsdk3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewsdk" />
+
+    <TextView
+        android:id="@+id/textViewsdk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Butterfly"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewsdk4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewsdk2" />
+
+    <TextView
+        android:id="@+id/textViewsdk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="Tek Taraf Göğüs"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewsdk3" />
+
+    <Button
+        android:id="@+id/kelebekbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:width="10sp"
+        android:height="10sp"
+        android:backgroundTint="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconSize="34dp"
+        app:iconTint="@color/iconrengi"
+        app:layout_constraintBottom_toTopOf="@+id/tektarafbutton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gbbuton31" />
+
+    <Button
+        android:id="@+id/tektarafbutton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:width="10sp"
         android:height="10sp"
         android:backgroundTint="#00FFFFFF"
@@ -125,54 +146,17 @@
         app:iconTint="@color/iconrengi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394" />
+        app:layout_constraintTop_toBottomOf="@+id/kelebekbuton" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="10sp"
-        android:height="10sp"
-        android:backgroundTint="#00FFFFFF"
-        app:icon="@android:drawable/ic_media_play"
-        app:iconSize="34dp"
-        app:iconTint="@color/iconrengi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="10sp"
-        android:height="10sp"
-        android:backgroundTint="#00FFFFFF"
-        app:icon="@android:drawable/ic_media_play"
-        app:iconSize="34dp"
-        app:iconTint="@color/iconrengi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829" />
-
-    <Button
-        android:id="@+id/dkgeributon"
+        android:id="@+id/bkgeributon"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="78dp"
         android:layout_height="44dp"
         android:text="Geri"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@+id/bisepstitle"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

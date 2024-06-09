@@ -18,39 +18,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/chespresstitle"
         android:layout_width="414dp"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/russo_one"
         android:text="Dambıl Kaldırma"
         android:textAlignment="center"
         android:textColor="@color/fontrengi"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/dkgeributon"
+        android:id="@+id/dambilkaldirmageri"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="78dp"
         android:layout_height="44dp"
         android:text="Geri"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@+id/bisepstitle"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.011" />
 
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="202dp"
-        android:layout_height="129dp"
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/gogus2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
